@@ -8,4 +8,8 @@ function sendUserName(){
 	$.get(url, function( data ) {
 	  $("#textBox2").text(data);
 	});
+	var url = "http://90.89.7.235:8081/getViewerCount?boxname=textBox3&username="+userName
+	$.get(url, function( data ) {
+	  $("#textBox3").text(data);
+	});
 }
